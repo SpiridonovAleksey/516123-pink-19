@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Спиридонов](https://up.htmlacademy.ru/adaptive/19/user/516123).
-* Наставник: `Неизвестно`.
+* Наставник: `Кекс`.
 
 ---
 
