@@ -1,1 +1,89 @@
-@import "blocks/header.less";
+@font-face {
+  font-family: "Opensans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Opensans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+  url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Opensans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  background-color: green;
+}
+
+body {
+  font-family: "Opensans";
+  background-color: lightgrey;
+   //width: 320px;
+  width: 100%;
+  background-color: lightgreen;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+
+@media (min-width: @tablet) {
+  body {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop) {
+  body {
+    width: 960px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "variables.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/site-list.less";
+@import "blocks/app.less";
+@import "blocks/promo.less";
+@import "blocks/recall.less";
+@import "blocks/slider-nav.less";
+@import "blocks/research.less";
+@import "blocks/table.less";
+@import "blocks/footer.less";
+@import "blocks/map.less";
+@import "blocks/contacts.less";
+@import "blocks/table-nav.less";
+@import "blocks/tarifs.less";
+

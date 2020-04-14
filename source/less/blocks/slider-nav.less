@@ -1,0 +1,63 @@
+
+.slider-nav {
+  padding: 27px 0 27px 0;
+  box-sizing: border-box;
+  width: 120px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  font-size: 0;
+
+  .slider-nav__input {
+    display: none;
+  }
+
+  .slider-nav__input:checked + .label-text {
+    background: #ffffff;
+    border-color: #283645;
+    opacity: 1;
+  }
+  .label-text {
+    border-color: #ffffff;
+  }
+}
+
+.slider-nav--tarifs {
+  padding: 33px 0 41px 0;
+}
+
+.label-text {
+  display: inline-block;
+  box-sizing: content-box;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin: 6px;
+
+  border: solid 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #283645;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+
+@media (min-width: @tablet) {
+  .slider-nav--tarifs {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .slider-nav {
+    display: none;
+  }
+}
