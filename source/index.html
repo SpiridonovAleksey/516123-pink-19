@@ -18,12 +18,12 @@
           </picture>
         </a>
 
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
 
       <nav class="main-nav">
 
-        <div class="main-nav__wrapper">
+<!--        <div class="main-nav__wrapper">-->
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
@@ -40,7 +40,7 @@
           </ul>
           <ul class="main-nav__list user-list">
           </ul>
-        </div>
+<!--        </div>-->
       </nav>
     </div>
   </header>
@@ -50,30 +50,32 @@
       <section class="app">
         <p class="app__title">Взгляните на жизнь иначе!</p>
         <div class="some-wrap2">
-          <a class="app__btn">Скачать приложение</a>
-          <ul class="app__list">
-            <li class="app__item">
-              <a href="" class="app__link app__link--apple">
-                <span class="visually-hidden">apple</span>
-              </a>
-            </li>
-            <li class="app__item">
-              <a href="" class="app__link app__link--android">
-                <span class="visually-hidden">android</span>
-              </a>
-            </li>
-            <li class="app__item">
-              <a href="" class="app__link app__link--wf">
-                <span class="visually-hidden">wf</span>
-              </a>
-            </li>
-          </ul>
-          <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="container">
+            <a href="" class="app__btn">Скачать приложение</a>
+            <ul class="app__list">
+              <li class="app__item">
+                <a href="" class="app__link app__link--apple">
+                  <span class="visually-hidden">apple</span>
+                </a>
+              </li>
+              <li class="app__item">
+                <a href="" class="app__link app__link--android">
+                  <span class="visually-hidden">android</span>
+                </a>
+              </li>
+              <li class="app__item">
+                <a href="" class="app__link app__link--wf">
+                  <span class="visually-hidden">wf</span>
+                </a>
+              </li>
+            </ul>
+            <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
     </div>
     <section class="promo">
-      <div CLASS="promo-wrap">
+      <div class="promo-wrap">
         <p class="promo__title promo__title--1">Устали от серости мегаполиса?</p>
         <p class="promo__title promo__title--2">Нам есть, что вам предложить!</p>
 
@@ -102,9 +104,10 @@
             <li class="promo__img-item promo__img-item--3"></li>
           </ul>
         </div>
+      </div>
 
-
-        <div class="research">
+      <div class="research">
+        <div class="research__wrap">
           <div class="research__icon">
           </div>
           <div class="research__info">
@@ -185,21 +188,48 @@
           </tr>
           <tr>
             <td class=" table__td ">Розовый фильтр</td>
-            <td class=" table__td yes">есть</td>
-            <td class=" table__td yes">есть</td>
-            <td class=" table__td yes">есть</td>
+            <td class=" table__td yes">
+              <span class="table__option">Розовый фильтр</span>
+              <span class="table__count visually-hidden">есть</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Розовый фильтр</span>
+              <span class="table__count visually-hidden">есть</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Розовый фильтр</span>
+              <span class="table__count visually-hidden">есть</span>
+            </td>
           </tr>
           <tr>
             <td class=" table__td ">Смайлики</td>
-            <td class=" table__td no">нет</td>
-            <td class=" table__td yes">есть</td>
-            <td class=" table__td yes">есть</td>
+            <td class=" table__td no">
+              <span class="table__option">Смайлики</span>
+              <span class="table_count visually-hidden">нет</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Смайлики</span>
+              <span class="table_count visually-hidden">есть</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Смайлики</span>
+              <span class="table_count visually-hidden">есть</span>
+            </td>
           </tr>
           <tr>
             <td class=" table__td ">Комментарии</td>
-            <td class=" table__td no">нет</td>
-            <td class=" table__td no">нет</td>
-            <td class=" table__td yes">есть</td>
+            <td class=" table__td no">
+              <span class="table__option">Комментарии</span>
+              <span class="table__count visually-hidden">нет</span>
+            </td>
+            <td class=" table__td no">
+              <span class="table__option">Комментарии</span>
+              <span class="table__count visually-hidden">нет</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Комментарии</span>
+              <span class="table__count visually-hidden">есть</span>
+            </td>
           </tr>
         </table>
 
@@ -234,7 +264,7 @@
           </li>
           <li class="contacts__list-item adress">
             <p class="contacts__list-title">Приезжайте в гости:</p>
-            <p class="contacts__list-text">ул. Большая<br> Конюшенная, 19/8</p>
+            <p class="contacts__list-text"><a href="#div-map" class="contacts__list-link">ул. Большая<br> Конюшенная, 19/8</a></p>
           </li>
         </ul>
       </div>
