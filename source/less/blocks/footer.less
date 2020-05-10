@@ -1,3 +1,67 @@
 .footer {
   display: none;
 }
+
+@media (min-width: @desktop) {
+  .footer {
+    display: flex;
+    margin: 0 auto;
+    width: 960px;
+    min-height: 200px ;
+    padding: 0 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    //background-color: lightblue;
+    align-items: center;
+
+  }
+
+  .logo--footer {
+
+  }
+
+
+
+  .social-list {
+    display: flex;
+  }
+
+  .social-list__item {
+    margin: 0 7px;
+  }
+
+  .social-list__link {
+    display: block;
+    box-sizing: border-box;
+    width: 51px;
+    height: 51px;
+    //background-color: red;
+    border: 3px solid grey;
+    border-radius: 50%;
+    background-position: center;
+
+    background-repeat: no-repeat;
+  }
+  .social-list__link--1 {
+    background-image: url("../../img/icon-twitter.svg");
+    //background-size: 18px 14px;
+  }
+  .social-list__link--2 {
+    background-image: url("../../img/icon-facebook.svg");
+  }
+  .social-list__link--3 {
+    background-image: url("../../img/icon-youtube.svg");
+  }
+
+  .footer__link {
+    display: flex;
+    align-items: center;
+    width: 152px;
+    height: 40px;
+    background-image: url("../../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center right -6px;
+    color: #283645;
+    font-size: 18px;
+  }
+}
