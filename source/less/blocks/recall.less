@@ -1,0 +1,156 @@
+
+.recall-wrap {
+  width: 320px;
+  margin: 0 auto;
+  padding: 42px 0 10px 0;
+  box-sizing: border-box;
+}
+
+.recall__list {
+  //width: 100%;
+  //box-sizing: border-box;
+}
+
+.recall__list-blockquote {
+  padding: 0 20px 0 20px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.recall__list-author {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.recall__list-text {
+  padding: 13px 0 0 0;
+  font-size: 14px;
+  line-height: 30px;
+  //width: 100%;
+  margin: 0;
+}
+
+.recall__list-age {
+  display: none;
+  margin: 0;
+}
+
+@media (min-width: @tablet) {
+  .recall {
+    padding: 85px 0 0 0;
+    box-sizing: border-box;
+  }
+
+  .recall-wrap {
+    width: 660px;
+    padding: 0 0 10px 0;
+  }
+
+  .recall__list-blockquote {
+    flex-direction: column;
+  }
+
+  .recall__list-author {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+    padding: 35px 0 2px 0;
+  }
+
+  .recall__list-text {
+    padding: 13px 0 0 0;
+    font-size: 18px;
+    line-height: 30px;
+    //width: 100%;
+    margin: 0;
+  }
+
+  .recall__list-age {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .recall {
+    width: 960px;
+    margin: 0 auto;
+    padding: 173px 0 0 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .recall-wrap {
+    width: 700px;
+    padding: 0 0 10px 0;
+  }
+
+  .recall::before {
+    content: "";
+    width: 22px;
+    height: 41px;
+    position: absolute;
+    background-image: url("../../img/icon-review-arrow-left.svg");
+    opacity: 0.3;
+    top: 214px;
+    left: 10px;
+  }
+
+  .recall::after {
+    content: "";
+    width: 22px;
+    height: 41px;
+    position: absolute;
+    background-image: url("../../img/icon-review-arrow-left.svg");
+    opacity: 0.3;
+    top: 214px;
+    transform: rotate(180deg);
+    right: 10px;
+  }
+
+  .recall__list-blockquote {
+    padding: 0 0 0 0;
+    margin: 0 auto;
+    //width: 640px;
+    box-sizing: border-box;
+    display: flex;
+    //flex-direction: column-reverse;
+    //font-family: "Open Sans", "Arial", sans-serif;
+    position: relative;
+  }
+
+  .recall__list-blockquote::before {
+    content: "";
+    width: 80px;
+    height: 64px;
+    position: absolute;
+    background-image: url("../../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -100px;
+    left: 313px;
+  }
+
+  .recall__list-author {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+    //margin: 0 auto;
+    padding: 36px 0 2px 0;
+  }
+
+  .recall__list-age {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

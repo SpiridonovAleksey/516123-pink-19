@@ -8,201 +8,300 @@
   <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="226" height="30" alt="Барбершоп «Бородинский»">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle"
-              type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-        </ul>
+    <div class="header-wrap">
+      <div class="some-wrap">
+        <a class="page-header__logo">
+          <picture class="picture-logo">
+            <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
+            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="24" class="logo">
+          </picture>
+        </a>
+
+        <button class="main-nav__toggle visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
-    </nav>
+
+      <nav class="main-nav">
+
+<!--        <div class="main-nav__wrapper">-->
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">HTML Academy</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+          </ul>
+<!--        </div>-->
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
-    <section class="app">
-      <p class="app__title">Взгляните на жизнь иначе!</p>
-      <a class="app__btn">Скачать приложение</a>
-      <ul class="app__list">
-        <li>
-        <a href="">
-          <span class="visually-hidden">apple</span>
-        </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="visually-hidden">android</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="visually-hidden">wf</span>
-          </a>
-        </li>
-      </ul>
-      <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
-
-    <section class="promo">
-      <p class="promo__title promo__title--1">Устали от серости мегаполиса?</p>
-      <p class="promo__title promo__title--2">Нам есть, что вам предложить!</p>
-
-        <ul class="promo__list">
-          <li class="promo__list-item">
-            <p class="promo__item-title">Поднимает настроение</p>
-            <p class="promo__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально
-              в несколько кликов!</p>
-          </li>
-          <li class="promo__list-item">
-            <p class="promo__item-title">Меняет мир вокруг</p>
-            <p class="promo__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить эффект</p>
-          </li>
-          <li class="promo__list-item">
-            <p class="promo__item-title">Заводит новых друзей</p>
-            <p class="promo__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых</p>
-          </li>
-        </ul>
-
-        <ul class="promo__img-list">
-          <li class="promo__img-item"></li>
-          <li class="promo__img-item"></li>
-          <li class="promo__img-item"></li>
-        </ul>
-
-        <div class="research">
-          <p class="research__title">Эффект<br> на 24 часа!</p>
-          <p class="research__text">Британские ученые провели исследования и доказали,<br class="des">
-            что положительный эффект<br class="tab"> от использования приложения длится целые сутки!</p>
-          <a href="" class="research__link">Узнать больше об исследовании</a>
+    <div class="app-wrap">
+      <section class="app">
+        <p class="app__title">Взгляните на жизнь иначе!</p>
+        <div class="some-wrap2">
+          <div class="container">
+            <a href="" class="app__btn">Скачать приложение</a>
+            <ul class="app__list">
+              <li class="app__item">
+                <a href="" class="app__link app__link--apple">
+                  <span class="visually-hidden">apple</span>
+                </a>
+              </li>
+              <li class="app__item">
+                <a href="" class="app__link app__link--android">
+                  <span class="visually-hidden">android</span>
+                </a>
+              </li>
+              <li class="app__item">
+                <a href="" class="app__link app__link--wf">
+                  <span class="visually-hidden">wf</span>
+                </a>
+              </li>
+            </ul>
+            <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
+      </section>
+    </div>
+    <section class="promo">
+      <div class="promo-wrap">
+        <p class="promo__title promo__title--1">Устали от серости мегаполиса?</p>
+        <p class="promo__title promo__title--2">Нам есть, что вам предложить!</p>
+
+        <div class="some-wrap3">
+          <ul class="promo__list">
+            <li class="promo__list-item">
+              <p class="promo__item-title">Поднимает настроение</p>
+              <p class="promo__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально
+                в несколько кликов!</p>
+            </li>
+            <li class="promo__list-item">
+              <p class="promo__item-title">Меняет мир вокруг</p>
+              <p class="promo__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="pbr">
+                усилить эффект</p>
+            </li>
+            <li class="promo__list-item">
+              <p class="promo__item-title">Заводит новых друзей</p>
+              <p class="promo__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых</p>
+            </li>
+          </ul>
+
+          <ul class="promo__img-list">
+            <li class="promo__img-item promo__img-item--1"></li>
+            <li class="promo__img-item promo__img-item--2"></li>
+            <li class="promo__img-item promo__img-item--3"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research">
+        <div class="research__wrap">
+          <div class="research__icon">
+          </div>
+          <div class="research__info">
+            <p class="research__title">Эффект<br class="research__br--tablet"> на 24 часа!</p>
+            <p class="research__text">Британские ученые провели исследования и доказали,<br class="research__br--desktop">
+              что положительный эффект<br class="research__br--tablet"> от использования приложения<br class="research__br--desktop"> длится целые сутки!</p>
+            <a href="" class="research__link">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="recall">
+      <div class="recall-wrap">
+        <ul class="recall__list">
+          <li class="recall__list-item">
+            <blockquote class="recall__list-blockquote">
+              <p class="recall__list-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+                фотографии!»</p>
+              <cite class="recall__list-author">Николай Петров</cite>
+              <p class="recall__list-age">25 лет, водитель трамвая</p>
+            </blockquote>
+          </li>
+          <li class="recall__list-item visually-hidden">
+            <blockquote class="recall__list-blockquote">
+              <p class="recall__list-text">«Это ваш главный проект на этом курсе. Выполняя домашние задания и
+                консультируясь со своим наставником, вы будете работать над этим проектом, готовя его к защите.»</p>
+              <cite class="recall__list-author">Роман Романов</cite>
+              <p class="recall__list-age">40 лет, друг водителя трамвая</p>
+            </blockquote>
+          </li>
+          <li class="recall__list-item visually-hidden">
+            <blockquote class="recall__list-blockquote">
+              <p class="recall__list-text">«Эласмотерий - древний вид носорогов, живший когда-то на Земле. Их ещё
+                называют «сибирский единорог»»</p>
+              <cite class="recall__list-author">Никита Петров</cite>
+              <p class="recall__list-age">6 лет, сын водителя трамвая</p>
+            </blockquote>
+          </li>
+        </ul>
 
-      <ul class="recall__list recall-list">
-        <li class="recall-list__item">
-          <blockquote class="recall-list__blockquote">
-            <p class="recall-list__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!»</p>
-            <cite class="recall-list__author">Николай Петров</cite>
-            <p class="recall-list__age">25 лет, водитель трамвая</p>
-          </blockquote>
-        </li>
-        <li class="recall-list__item visually-hidden">
-          <blockquote class="recall-list__blockquote">
-            <p class="recall-list__text">«Это ваш главный проект на этом курсе. Выполняя домашние задания и
-              консультируясь со своим наставником, вы будете работать над этим проектом, готовя его к защите.»</p>
-            <cite class="recall-list__author">Роман Романов</cite>
-            <p class="recall-list__age">40 лет, друг водителя трамвая</p>
-          </blockquote>
-        </li>
-        <li class="recall-list__item visually-hidden">
-          <blockquote class="recall-list__blockquote">
-            <p class="recall-list__text">«Эласмотерий - древний вид носорогов, живший когда-то на Земле. Их ещё
-              называют «сибирский единорог»»</p>
-            <cite class="recall-list__author">Никита Петров</cite>
-            <p class="recall-list__age">6 лет, сын водителя трамвая</p>
-          </blockquote>
-        </li>
-      </ul>
-
-      <div class="recall__nav slider-nav">
-        <label class="slider-nav__label">
-          <input type="radio" name="toggle" checked class="slider-nav__input">
-          <span class="label-text">слайд 1</span>
-        </label>
-        <label class="slider-nav__label">
-          <input type="radio" name="toggle" class="slider-nav__input">
-          <span class="label-text">слайд 2</span>
-        </label>
-        <label class="slider-nav__label">
-          <input type="radio" name="toggle" class="slider-nav__input">
-          <span class="label-text">слайд 3</span>
-        </label>
+        <div class="recall__nav slider-nav">
+          <label class="slider-nav__label">
+            <input type="radio" name="toggle" checked class="slider-nav__input">
+            <span class="label-text">слайд 1</span>
+          </label>
+          <label class="slider-nav__label">
+            <input type="radio" name="toggle" class="slider-nav__input">
+            <span class="label-text">слайд 2</span>
+          </label>
+          <label class="slider-nav__label">
+            <input type="radio" name="toggle" class="slider-nav__input">
+            <span class="label-text">слайд 3</span>
+          </label>
+        </div>
       </div>
-
     </section>
 
-    <table class="table">
-      <tr class="table__header">
-        <th class="table__th">Тарифы</th>
-        <th class="table__th">
-          <p class="table__tarif-name">База</p>
-          <p class="table__tarif-price">1,99 USD</p>
-        </th>
-        <th class="table__th">
-          <span class="hit visually-hidden">ХИТ</span>
-          <p class="table__tarif-name">Стандарт</p>
-          <p class="table__tarif-price">3,99 USD</p>
-        </th>
-        <th class="table__th">
-          <p class="table__tarif-name">Анлим</p>
-          <p class="table__tarif-price">9,99 USD</p>
-        </th>
-      </tr>
-      <tr>
-        <td class=" table__td ">Розовый фильтр</td>
-        <td class=" table__td yes">есть</td>
-        <td class=" table__td yes">есть</td>
-        <td class=" table__td yes">есть</td>
-      </tr>
-      <tr>
-        <td class=" table__td ">Смайлики</td>
-        <td class=" table__td no">нет</td>
-        <td class=" table__td yes">есть</td>
-        <td class=" table__td yes">есть</td>
-      </tr>
-      <tr>
-        <td class=" table__td ">Комментарии</td>
-        <td class=" table__td no">нет</td>
-        <td class=" table__td no">нет</td>
-        <td class=" table__td yes">есть</td>
-      </tr>
-    </table>
+    <section class="tarifs">
+      <div class="tarifs-wrap">
+        <table class="tarifs__table table">
+          <tr class="table__header">
+            <th class="table__th">Тарифы</th>
+            <th class="table__th">
+              <p class="table__tarif-name">База</p>
+              <p class="table__tarif-price">1,99 USD</p>
+            </th>
+            <th class="table__th table__th--hit">
+              <span class="hit">ХИТ</span>
+              <p class="table__tarif-name">Стандарт</p>
+              <p class="table__tarif-price">3,99 USD</p>
+            </th>
+            <th class="table__th">
+              <p class="table__tarif-name">Анлим</p>
+              <p class="table__tarif-price">9,99 USD</p>
+            </th>
+          </tr>
+          <tr>
+            <td class=" table__td ">Розовый фильтр</td>
+            <td class=" table__td yes">
+              <span class="table__option">Розовый фильтр</span>
+              <span class="table__count visually-hidden">есть</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Розовый фильтр</span>
+              <span class="table__count visually-hidden">есть</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Розовый фильтр</span>
+              <span class="table__count visually-hidden">есть</span>
+            </td>
+          </tr>
+          <tr>
+            <td class=" table__td ">Смайлики</td>
+            <td class=" table__td no">
+              <span class="table__option">Смайлики</span>
+              <span class="table_count visually-hidden">нет</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Смайлики</span>
+              <span class="table_count visually-hidden">есть</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Смайлики</span>
+              <span class="table_count visually-hidden">есть</span>
+            </td>
+          </tr>
+          <tr>
+            <td class=" table__td ">Комментарии</td>
+            <td class=" table__td no">
+              <span class="table__option">Комментарии</span>
+              <span class="table__count visually-hidden">нет</span>
+            </td>
+            <td class=" table__td no">
+              <span class="table__option">Комментарии</span>
+              <span class="table__count visually-hidden">нет</span>
+            </td>
+            <td class=" table__td yes">
+              <span class="table__option">Комментарии</span>
+              <span class="table__count visually-hidden">есть</span>
+            </td>
+          </tr>
+        </table>
+
+        <div class="recall__nav slider-nav slider-nav--tarifs">
+          <label class="slider-nav__label">
+            <input type="radio" name="toggle" checked class="slider-nav__input">
+            <span class="label-text">слайд 1</span>
+          </label>
+          <label class="slider-nav__label">
+            <input type="radio" name="toggle" class="slider-nav__input">
+            <span class="label-text">слайд 2</span>
+          </label>
+          <label class="slider-nav__label">
+            <input type="radio" name="toggle" class="slider-nav__input">
+            <span class="label-text">слайд 3</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts-wrap">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__list-item">
+            <p class="contacts__list-title">Звоните:</p>
+            <p class="contacts__list-text"><a href="tel:+78125556666" class="contacts__list-link">+7 (812) 555-66-66</a></p>
+          </li>
+          <li class="contacts__list-item mail">
+            <p class="contacts__list-title">Пишите:</p>
+            <p class="contacts__list-text"><a href="mailto:mail@htmlacademy.ru" class="contacts__list-link">mail@htmlacademy.ru</a></p>
+          </li>
+          <li class="contacts__list-item adress">
+            <p class="contacts__list-title">Приезжайте в гости:</p>
+            <p class="contacts__list-text"><a href="#div-map" class="contacts__list-link">ул. Большая<br> Конюшенная, 19/8</a></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="div-map" id="map"></div>
   </main>
 
   <footer class="footer">
-    <a href="">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="226" height="30" alt="Барбершоп «Бородинский»">
+    <a class="page-header__logo">
+      <picture class="picture-logo">
+        <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
+        <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+        <img src="img/logo-pink-white-mobile.svg" width="75" height="24" class="logo logo--footer">
+      </picture>
     </a>
+
     <ul class="footer__list social-list">
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--1" href="#">ссылка на страницу в твитере</a>
+        <a class="social-list__link social-list__link--1" href="#"><span class="visually-hidden">ссылка на страницу в твитере</span></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--2" href="#">ссылка на страницу в фейсбуке</a>
+        <a class="social-list__link social-list__link--2" href="#"><span class="visually-hidden">ссылка на страницу в фейсбуке</span></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--3" href="#">ссылка на страницу в ютубе</a>
+        <a class="social-list__link social-list__link--3" href="#"><span class="visually-hidden">ссылка на страницу в ютубе</span></a>
       </li>
     </ul>
-    <div class="footer__copyright copyright">
-      <span class="copyright__title">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">htmlacademy</span>
-      </a>
-    </div>
+
+    <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="footer__link--title">Разработано</span>
+      <span class="visually-hidden">htmlacademy</span>
+    </a>
+
   </footer>
 
-
+  <script src="js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEe6gK3a-MKyU_yLz_piioAJlIx08VK2E&callback=initMap"></script>
   </body>
 </html>
