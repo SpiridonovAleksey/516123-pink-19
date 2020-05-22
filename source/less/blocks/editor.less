@@ -1,0 +1,98 @@
+
+.editor__form {
+  background-color: @grey4;
+  padding: 15px 0 65px 0;
+}
+
+.editor__list {
+  position: relative;
+  display: flex;
+  width: 280px;
+  margin: 40px auto 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor__input {
+  height: 40px;
+  background-color: transparent;
+  box-sizing: border-box;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  visibility: hidden;
+  //width: 280px;
+}
+
+.editor__item {
+  margin: 0 20px;
+}
+
+.editor__filter-1:checked ~ .editor__list .editor__input--1 {
+  visibility: visible;
+}
+
+.editor__filter-2:checked ~ .editor__list .editor__input--2 {
+  visibility: visible;
+}
+
+.editor__filter-3:checked ~ .editor__list .editor__input--3 {
+  visibility: visible;
+}
+
+.editor__item svg {
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.editor__filter-1:checked ~ .editor__list label[for="filter-1"] svg,
+.editor__filter-2:checked ~ .editor__list label[for="filter-2"] svg,
+.editor__filter-3:checked ~ .editor__list label[for="filter-3"] svg {
+  opacity: 1;
+  fill: @pink1;
+}
+
+input[type="range"] {
+  width: 240px;
+  //-webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  //-webkit-appearance: none;
+  background-color: #283645;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  margin-top: -5px;
+  border-radius: 50%;
+  //-webkit-appearance: none;
+  cursor: pointer;
+  background: #f2f2f2;
+  border: 2px solid #d22856;
+
+  &:active {
+    background: #d22856;
+  }
+}
+
+input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #9a905d;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background-color: #43e5f7;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background-color: #9a905d;
+}
