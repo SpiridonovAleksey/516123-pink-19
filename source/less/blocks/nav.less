@@ -1,0 +1,151 @@
+
+/*Block model*/
+
+.nav__logo-wrapper {
+  padding-top: 5px;
+  margin-left: 20px;
+  min-height: 66px;
+  transform: translateX(-72px);
+}
+
+.nav__logo {
+  fill: @light;
+  cursor: pointer;
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @light;
+    opacity: 0.3;
+  }
+}
+
+.nav__toggle-wrapper {
+  margin-left: auto;
+  padding-top: 21px;
+  margin-right: 20px;
+}
+
+.nav__toggle {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: @light;
+  line-height: normal;
+  cursor: pointer;
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @pink--opacity;
+  }
+}
+
+.nav__toggle-cross {
+  display: none;
+}
+
+.nav__list {
+  width: 100%;
+  flex-direction: column;
+  display: none;
+  border-bottom: solid 1px black;
+}
+
+.nav__open {
+  display: flex;
+}
+
+.nav__header-open {
+  background-color: #283645;
+}
+
+.nav__link {
+  display: block;
+  min-height: 63px;
+  text-align: center;
+  line-height: 63px;
+  border-top: solid 1px black;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  background-color: @dark;
+  color: @light;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "OpenSans-Bold", "Arial", sans-serif;
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: @light--opacity;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .nav__logo-wrapper {
+    padding-top: 26px;
+    min-height: 109px;
+    transform: none;
+  }
+
+  .nav__toggle-wrapper {
+    padding-top: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav__logo-wrapper {
+    margin-left: 21px;
+  }
+
+  .nav__toggle-wrapper {
+    display: none;
+  }
+
+  .nav__list {
+    margin-left: auto;
+    margin-right: -20px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    min-width: 701px;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+
+  .nav__item {
+    flex-grow: 1;
+  }
+
+  .nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    line-height: 42px;
+    background-color: inherit;
+    border-top: none;
+    box-shadow: none;
+    font-family: "OpenSans", "Arial", sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  .nav__link-current {
+    &::after {
+      display: flex;
+      content: "";
+      border-bottom: 2px solid @light;
+    }
+  }
+
+  //js
+  .header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
