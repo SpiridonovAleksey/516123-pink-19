@@ -1,0 +1,146 @@
+.goals__background {
+  position: relative;
+  margin-top: 29px;
+  background-color: @grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='94.074' width='1200' version='1.0'%3E%3Cpath fill='%23fff' d='M1200 0H0v94.074z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+  }
+}
+
+.goals__list {
+  position: relative;
+  z-index: 100;
+}
+
+.goals {
+  padding-top: 41px;
+}
+
+.goals__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 88px;
+}
+
+.goals__item {
+  margin-bottom: 33px;
+}
+
+.goals__images {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: 277px;
+  overflow: hidden;
+}
+
+.goals__image {
+  display: none;
+
+  &:last-child {
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .goals {
+    padding-top: 50px;
+  }
+
+  .goals__images {
+    position: relative;
+    z-index: 100;
+    order: 1;
+    height: 481px;
+    margin-top: 4px;
+  }
+
+  .goals__background {
+    margin-top: 47px;
+  }
+
+  .goals__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  .goals__list {
+    width: 310px;
+    order: 2;
+    margin-top: 74px;
+  }
+
+  .goals__item {
+    margin-bottom: 34px;
+  }
+
+  .goals__title {
+    text-align: unset;
+    margin-bottom: 13px;
+  }
+
+  .goals__description {
+    text-align: unset;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .goals {
+    padding-top: 67px;
+  }
+
+  .goals__background {
+    margin-top: 75px;
+  }
+
+  .goals__container {
+    flex-direction: column;
+  }
+
+  .goals__images {
+    margin-top: 0;
+    height: 302px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .goals__image {
+    display: flex;
+  }
+
+  .goals__list {
+    width: 877px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 56px;
+    justify-content: space-between;
+  }
+
+  .goals__item {
+    width: 238px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .goals__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .goals__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

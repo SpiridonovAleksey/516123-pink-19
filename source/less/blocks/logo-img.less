@@ -1,0 +1,29 @@
+.logo-img__glasses-desktop,
+.logo-img__stars {
+  display: none;
+}
+
+.logo-img__glasses-tablet {
+  display: none;
+
+  &--footer {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .logo-img__glasses-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-img__glasses-tablet {
+    display: none;
+  }
+
+  .logo-img__glasses-desktop,
+  .logo-img__stars {
+    display: block;
+  }
+}
