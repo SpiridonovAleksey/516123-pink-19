@@ -29,6 +29,7 @@
 }
 
 .nav__toggle {
+  display: block;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -45,6 +46,10 @@
   }
 }
 
+.nav__toggle--none {
+  display: none;
+}
+
 .nav__toggle-cross {
   display: none;
 }
@@ -52,8 +57,11 @@
 .nav__list {
   width: 100%;
   flex-direction: column;
-  display: none;
   border-bottom: solid 1px black;
+}
+
+.nav__list--close {
+  display: none;
 }
 
 .nav__open {
@@ -62,6 +70,7 @@
 
 .nav__header-open {
   background-color: #283645;
+  color: @light;
 }
 
 .nav__link {

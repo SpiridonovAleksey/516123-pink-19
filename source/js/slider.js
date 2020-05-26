@@ -1,6 +1,6 @@
 
-document.getElementById('comments__btn-1').setAttribute('checked', true);
-document.getElementById('tariffs__btn-1').setAttribute('checked', true);
+document.getElementById("comments__btn-1").setAttribute("checked", true);
+document.getElementById("tariffs__btn-1").setAttribute("checked", true);
 
 var currentIndex = 0;
 
@@ -10,19 +10,19 @@ var listRow = document.querySelector(".comments__list");
 var toggleBtns = document.querySelectorAll(".slider__toggle");
 var sliderList = document.querySelectorAll(".js__slider-item");
 
-window.addEventListener('resize', function (e) {
+window.addEventListener("resize", function (e) {
   slide(currentIndex)
 });
 
 
 var slide = function (index) {
-  var winWidth = document.querySelector('.comments__item').getBoundingClientRect().width
+  var winWidth = document.querySelector(".comments__item").getBoundingClientRect().width
 
   offset = winWidth * index;
-  listRow.style.transform = 'translateX(-' + offset + 'px)';
+  listRow.style.transform = "translateX(-" + offset + "px)";
 };
 
-button_next.addEventListener('click', function (e) {
+button_next.addEventListener("click", function (e) {
   e.preventDefault();
   if (currentIndex === sliderList.length - 1) {
     currentIndex = 0;
@@ -33,7 +33,7 @@ button_next.addEventListener('click', function (e) {
   }
 });
 
-button_prev.addEventListener('click', function (e) {
+button_prev.addEventListener("click", function (e) {
   e.preventDefault();
   if (currentIndex === 0) {
     currentIndex = sliderList.length - 1;
@@ -46,7 +46,7 @@ button_prev.addEventListener('click', function (e) {
 
 
 toggleBtns.forEach(function (item) {
-  item.addEventListener('click', function (e) {
+  item.addEventListener("click", function (e) {
     var index = [].slice.call(toggleBtns).indexOf(item);
     currentIndex = index;
     slide(index);
