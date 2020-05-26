@@ -94,7 +94,7 @@
         </a>
 
         <div class="nav__toggle-wrapper">
-          <button class="nav__toggle" type="button" title="Меню">
+          <button class="nav__toggle nav__toggle--none" type="button" title="Меню">
             <svg class="nav__toggle-burger" x="0px" y="0px" width="49.945px" height="24.007px">
               <use xlink:href="#icon-menu-burger"></use>
             </svg>
@@ -127,26 +127,14 @@
 
   <main class="main">
     <h1 class="visually-hidden">Поделиться фотографией PINK</h1>
-    <section class="main-wrapper ">
+    <section class="main-wrapper">
       <h2 class="visually-hidden">Заголовок страницы</h2>
       <div class="main__background">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)"
-            srcset="/img/bg-back-desktop@1x.webp, /img/bg-back-desktop@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="/img/bg-back-desktop@1x.jpg, /img/bg-back-desktop@2x.jpg 2x">
-
-          <source type="image/webp" media="(min-width: 660px)"
-            srcset="/img/bg-back-tablet@1x.webp, /img/bg-back-tablet@2x.webp 2x">
-          <source media="(min-width: 660px)" srcset="/img/bg-back-tablet@1x.jpg, /img/bg-back-tablet@2x.jpg 2x">
-
-          <source type="image/webp" srcset="/img/bg-back-mobile@1x.webp, /img/bg-back-mobile@2x.webp 2x">
-          <img src="/img/bg-back-mobile@1x.jpg" srcset="/img/bg-back-mobile@2x.jpg 2x" alt="background">
-        </picture>
       </div>
 
       <div class="main__title-wrapper main__title-wrapper--form">
         <div class="container">
-          <h2 class="main__title ">
+          <h2 class="main__title">
             Конкурс на самое безбашенное путешествие с Пинк
           </h2>
         </div>
@@ -234,7 +222,7 @@
 
         <div class="form__contacts-wrapper">
           <div class="form__contact form__contact--tel">
-            <label class="form__label form__label--contacts">
+            <label for="person-phone" class="form__label form__label--contacts">
               Номер телефона
             </label>
             <input class="form__input-text form__input-text--contacts" type="tel" name="person-phone" id="person-phone"
@@ -242,7 +230,7 @@
           </div>
 
           <div class="form__contact form__contact--mail">
-            <label class="form__label form__label--contacts">
+            <label for="person-email" class="form__label form__label--contacts">
               Адрес почты
             </label>
             <input class="form__input-text form__input-text--contacts" type="email" name="person-email"
@@ -252,7 +240,7 @@
 
       </fieldset>
 
-      <div class="form__app-used-wrapper ">
+      <div class="form__app-used-wrapper">
         <fieldset class="form__app-used form__section">
           <legend class="form__label form__legend form__legend--app-used">С каким приложением
             путешествовали?</legend>
@@ -343,7 +331,7 @@
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link " href="https://twitter.com/htmlacademy" title="twitter">
+          <a class="social__link" href="https://twitter.com/htmlacademy" title="twitter">
             <svg class="social__icon social__icon--twitter" x="0px" y="0px" width="17.5px" height="14.663px">
               <use xlink:href="#icon-twitter"></use>
             </svg>
@@ -377,7 +365,7 @@
 
   </footer>
 
-  <div class="modal modal__error container section list">
+  <div class="modal modal--error container section list">
     <h3 class="modal__title list__title">Что-то пошло не так!</h3>
     <p class="modal__description section__description">
       Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
@@ -387,14 +375,14 @@
     </div>
   </div>
 
-  <div class="modal modal__sent container section list">
+  <div class="modal modal--sent container section list">
     <h3 class="modal__title list__title">Ваша заявка отправлена</h3>
     <p class="modal__description section__description">
       Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
       оповестим вас.
     </p>
     <div class="modal__button-background">
-      <button class="modal__button button button__rect " type="button">Закрыть окно</button>
+      <button class="modal__button button button__rect" type="button">Закрыть окно</button>
     </div>
   </div>
 
