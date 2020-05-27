@@ -1,17 +1,4 @@
 
-// function navigationClose() {
-//   var header = document.querySelector(".header");
-//   var navList = document.querySelector(".nav__list");
-//   var btnMenu = document.querySelector(".nav__toggle");
-//
-//
-//
-//   btnMenu.classList.remove("nav_toggle--none");
-// }
-//
-// navigationClose()
-
-
 function popupNav() {
   var tglNav = document.querySelector(".nav__toggle");
   var navList = document.querySelector(".nav__list");

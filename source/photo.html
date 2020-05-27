@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Пинк: Фото</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
 </head>
 
 <body>
@@ -70,7 +72,7 @@
   <header class="header">
     <div class="container">
       <nav class="header__nav nav">
-        <a class="nav__logo-wrapper" href="index.html" title="PINK">
+        <a class="nav__logo-wrapper a-global" href="index.html" title="PINK">
           <svg class="nav__logo" viewBox="0 0 146.3 40.375" width="147" height="40">
             <g class="nav__logo-img logo-img">
               <g class="logo-img__letter letter">
@@ -110,31 +112,31 @@
 
         <div class="nav__toggle-wrapper">
           <button class="nav__toggle nav__toggle--none" type="button" title="Меню">
-            <svg class="nav__toggle-burger" x="0px" y="0px" width="49.945px" height="24.007px">
+            <svg class="nav__toggle-burger" x="0px" y="0px" width="49.945" height="24.007">
               <use xlink:href="#icon-menu-burger"></use>
             </svg>
-            <svg class="nav__toggle-cross" x="0px" y="0px" width="23.867px" height="23.867px">
+            <svg class="nav__toggle-cross" x="0px" y="0px" width="23.867" height="23.867">
               <use xlink:href="#icon-menu-cross"></use>
             </svg>
           </button>
         </div>
 
-        <ul class="nav__list">
+        <ul class="nav__list ul-global">
           <li class="nav__item">
-            <a class="nav__link" href="index.html" title="Главная">Главная</a>
+            <a class="nav__link a-global" href="index.html" title="Главная">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="photo.html" title="Фотографии">
-              <p class="nav__link-current" title="Фотографии">Фотографии</p>
+            <a class="nav__link a-global" href="photo.html" title="Фотографии">
+              <p class="nav__link-current p-global" title="Фотографии">Фотографии</p>
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html">
+            <a class="nav__link a-global" href="form.html">
               Конкурс
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="https://htmlacademy.ru/" title="HTMLAcademy">HTML academy</a>
+            <a class="nav__link a-global" href="https://htmlacademy.ru/" title="HTMLAcademy">HTML academy</a>
           </li>
         </ul>
 
@@ -143,16 +145,16 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">Фотографии пользователей PINK</h1>
+    <h1 class="visually-hidden h1-global">Фотографии пользователей PINK</h1>
 
     <section class="main-wrapper">
-      <h2 class="visually-hidden">Заголовок страницы</h2>
+      <h2 class="visually-hidden h2-global">Заголовок страницы</h2>
       <div class="main__background">
       </div>
 
       <div class="main__title-wrapper main__title-wrapper--photo">
         <div class="container">
-          <h2 class="main__title main__title--photo">
+          <h2 class="main__title main__title--photo h2-global">
             Фотографии пользователей
           </h2>
         </div>
@@ -162,14 +164,14 @@
     <section class="post container section list">
 
       <div class="section__description-wrapper post__description">
-        <p class="section__description section__description--photo">
+        <p class="section__description section__description--photo p-global">
           Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
         </p>
       </div>
 
       <div class="post__item post__item--day">
-        <a href="/img/panorama-desktop@2x.jpg">
+        <a href="/img/panorama-desktop@2x.jpg" class="a-global">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="/img/panorama-desktop@1x.webp, /img/panorama-desktop@2x.webp 2x">
@@ -186,12 +188,12 @@
         </a>
         <div class="post__comment post__comment--day">
           <div class="post__user-info">
-            <h3 class="post__user">
+            <h3 class="post__user h3-global">
               Анна
             </h3>
             <span class="post__time">(5 минут назад)</span>
           </div>
-          <p class="post__text list__description">
+          <p class="post__text list__description p-global">
             Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
             вопросы!
           </p>
@@ -203,7 +205,7 @@
       </div>
 
       <div class="post__item">
-        <a href="/img/photo-car-desktop@2x.jpg">
+        <a href="/img/photo-car-desktop@2x.jpg" class="a-global">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="/img/photo-car-desktop@1x.webp, /img/photo-car-desktop@2x.webp 2x">
@@ -222,12 +224,12 @@
 
         <div class="post__comment">
           <div class="post__user-info">
-            <h3 class="post__user">
+            <h3 class="post__user h3-global">
               Левон
             </h3>
             <span class="post__time">(5 часов назад)</span>
           </div>
-          <p class="post__text list__description">
+          <p class="post__text list__description p-global">
             Вчера он на луну летал, сегодня в руки к нам попал.
           </p>
           <div class="post__likes">
@@ -238,7 +240,7 @@
       </div>
 
       <div class="post__item">
-        <a href="/img/photo-drumset-desktop@2x.jpg">
+        <a href="/img/photo-drumset-desktop@2x.jpg" class="a-global">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="/img/photo-drumset-desktop@1x.webp, /img/photo-drumset-desktop@2x.webp 2x">
@@ -258,12 +260,12 @@
 
         <div class="post__comment">
           <div class="post__user-info">
-            <h3 class="post__user">
+            <h3 class="post__user h3-global">
               Антон
             </h3>
             <span class="post__time">(12 часов назад)</span>
           </div>
-          <p class="post__text list__description">
+          <p class="post__text list__description p-global">
             Соседи будут рады!
           </p>
           <div class="post__likes">
@@ -274,7 +276,7 @@
       </div>
 
       <div class="post__item">
-        <a href="/img/photo-window-desktop@2x.jpg">
+        <a href="/img/photo-window-desktop@2x.jpg" class="a-global">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="/img/photo-window-desktop@1x.webp, /img/photo-window-desktop@2x.webp 2x">
@@ -294,12 +296,12 @@
 
         <div class="post__comment">
           <div class="post__user-info">
-            <h3 class="post__user">
+            <h3 class="post__user h3-global">
               Борис
             </h3>
             <span class="post__time">(20 часов назад)</span>
           </div>
-          <p class="post__text list__description">
+          <p class="post__text list__description p-global">
             Здесь могла быть ваша цитата о высоком и вечном.
           </p>
           <div class="post__likes">
@@ -310,7 +312,7 @@
       </div>
 
       <div class="post__item">
-        <a href="/img/photo-fair-desktop@2x.jpg">
+        <a href="/img/photo-fair-desktop@2x.jpg" class="a-global">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="/img/photo-fair-desktop@1x.webp, /img/photo-fair-desktop@2x.webp 2x">
@@ -329,12 +331,12 @@
 
         <div class="post__comment">
           <div class="post__user-info">
-            <h3 class="post__user">
+            <h3 class="post__user h3-global">
               Сергей
             </h3>
             <span class="post__time">(25 часов назад)</span>
           </div>
-          <p class="post__text list__description">
+          <p class="post__text list__description p-global">
             Самая кубанская в мире!
           </p>
           <div class="post__likes">
@@ -345,7 +347,7 @@
       </div>
 
       <div class="post__item">
-        <a href="/img/photo-pov-desktop@2x.jpg">
+        <a href="/img/photo-pov-desktop@2x.jpg" class="a-global">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="/img/photo-pov-desktop@1x.webp, /img/photo-pov-desktop@2x.webp 2x">
@@ -364,12 +366,12 @@
 
         <div class="post__comment">
           <div class="post__user-info">
-            <h3 class="post__user">
+            <h3 class="post__user h3-global">
               Максим
             </h3>
             <span class="post__time">(40 часов назад)</span>
           </div>
-          <p class="post__text list__description">
+          <p class="post__text list__description p-global">
             Где снег-то?
           </p>
           <div class="post__likes">
@@ -380,7 +382,7 @@
       </div>
 
       <div class="post__item">
-        <a href="/img/photo-wing-desktop@2x.jpg">
+        <a href="/img/photo-wing-desktop@2x.jpg" class="a-global">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="/img/photo-wing-desktop@1x.webp, /img/photo-wing-desktop@2x.webp 2x">
@@ -399,12 +401,12 @@
 
         <div class="post__comment">
           <div class="post__user-info">
-            <h3 class="post__user">
+            <h3 class="post__user h3-global">
               Надежда
             </h3>
             <span class="post__time">(45 часов назад)</span>
           </div>
-          <p class="post__text list__description">
+          <p class="post__text list__description p-global">
             Всем GM и взаимные лайки!
           </p>
           <div class="post__likes">
@@ -416,11 +418,11 @@
     </section>
 
     <section class="create-post">
-      <h2 class="visually-hidden">Редактирование фотографии для поста</h2>
+      <h2 class="visually-hidden h2-global">Редактирование фотографии для поста</h2>
 
       <div class="section container">
         <div class="section__description-wrapper create-post-wrapper">
-          <p class="section__description">
+          <p class="section__description p-global">
             Затмите их всех! <br>
             Выкладывайте все, что накопилось в телефоне!
           </p>
@@ -458,21 +460,21 @@
               <div class="create-post__filters">
 
                 <label class="create-post__edit create-post__edit--crop" for="editor-1" title="Обрезать">
-                  <svg class="create-post__filter create-post__filter--crop" x="0px" y="0px" width="48px" height="48px">
+                  <svg class="create-post__filter create-post__filter--crop" x="0px" y="0px" width="48" height="48">
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
                 </label>
 
                 <label class="create-post__edit create-post__edit--fill" for="editor-2" title="Залить розовым">
-                  <svg class="create-post__filter  create-post__filter--fill" x="0px" y="0px" width="48px"
-                    height="48px">
+                  <svg class="create-post__filter  create-post__filter--fill" x="0px" y="0px" width="48"
+                    height="48">
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                 </label>
 
                 <label class="create-post__edit create-post__edit--contrast" for="editor-3" title="Контрастность">
-                  <svg class="create-post__filter create-post__filter--contrast" x="0px" y="0px" width="31.92px"
-                    height="31.92px">
+                  <svg class="create-post__filter create-post__filter--contrast" x="0px" y="0px" width="31.92"
+                    height="31.92">
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                 </label>
@@ -526,7 +528,7 @@
   </main>
   <footer class="footer footer--photo container">
 
-    <a class="footer__logo-wrapper" href="index.html" title="PINK">
+    <a class="footer__logo-wrapper a-global" href="index.html" title="PINK">
       <svg class="footer__logo" viewBox="0 0 146.3 40.375" width="147" height="40">
         <g class="footer__logo-img logo-img">
           <g class="logo-img__letter letter">
@@ -565,24 +567,24 @@
     </a>
 
     <div class="footer__social social">
-      <ul class="social__list">
+      <ul class="social__list ul-global">
         <li class="social__item">
-          <a class="social__link" href="https://twitter.com/htmlacademy" title="twitter">
-            <svg class="social__icon social__icon--twitter" x="0px" y="0px" width="17.5px" height="14.663px">
+          <a class="social__link a-global" href="https://twitter.com/htmlacademy" title="twitter">
+            <svg class="social__icon social__icon--twitter" x="0px" y="0px" width="17.5" height="14.663">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" title="Facebook">
-            <svg class="social__icon social__icon--facebook" x="0px" y="0px" width="8.673px" height="18.944px">
+          <a class="social__link a-global social__link--facebook" href="https://facebook.com/htmlacademy" title="Facebook">
+            <svg class="social__icon social__icon--facebook" x="0px" y="0px" width="8.673" height="18.944">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://youtube.com/htmlacademyru" title="YouTube">
-            <svg class="social__icon social__icon--youtube" x="0px" y="0px" width="14.64px" height="13.96px">
+          <a class="social__link a-global social__link--youtube" href="https://youtube.com/htmlacademyru" title="YouTube">
+            <svg class="social__icon social__icon--youtube" x="0px" y="0px" width="14.64" height="13.96">
               <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
@@ -592,7 +594,7 @@
 
     <div class="footer__copyright copyright social">
       <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTMLAcademy">
+      <a class="copyright__link a-global" href="https://htmlacademy.ru/intensive/adaptive" title="HTMLAcademy">
         <svg class="copyright__icon social__icon social__icon--academy" viewBox="0 0 60 60">
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>

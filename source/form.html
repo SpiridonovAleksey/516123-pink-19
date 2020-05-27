@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Пинк: Конкурс</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
 </head>
 
 <body>
@@ -55,7 +57,7 @@
   <header class="header">
     <div class="container">
       <nav class="header__nav nav">
-        <a class="nav__logo-wrapper" href="index.html" title="PINK">
+        <a class="nav__logo-wrapper a-global" href="index.html" title="PINK">
           <svg class="nav__logo" viewBox="0 0 146.3 40.375" width="147" height="40">
             <g class="nav__logo-img logo-img">
               <g class="logo-img__letter letter">
@@ -95,29 +97,29 @@
 
         <div class="nav__toggle-wrapper">
           <button class="nav__toggle nav__toggle--none" type="button" title="Меню">
-            <svg class="nav__toggle-burger" x="0px" y="0px" width="49.945px" height="24.007px">
+            <svg class="nav__toggle-burger" x="0px" y="0px" width="49.945" height="24.007">
               <use xlink:href="#icon-menu-burger"></use>
             </svg>
-            <svg class="nav__toggle-cross" x="0px" y="0px" width="23.867px" height="23.867px">
+            <svg class="nav__toggle-cross" x="0px" y="0px" width="23.867" height="23.867">
               <use xlink:href="#icon-menu-cross"></use>
             </svg>
           </button>
         </div>
 
-        <ul class="nav__list">
+        <ul class="nav__list ul-global">
           <li class="nav__item">
-            <a class="nav__link" href="index.html" title="Главная">Главная</a>
+            <a class="nav__link a-global" href="index.html" title="Главная">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="photo.html" title="Фотографии">Фотографии</a>
+            <a class="nav__link a-global" href="photo.html" title="Фотографии">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html" title="Конкурс">
-              <p class="nav__link-current">Конкурс</p>
+            <a class="nav__link a-global" href="form.html" title="Конкурс">
+              <p class="nav__link-current p-global">Конкурс</p>
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="https://htmlacademy.ru/" title="HTMLAcademy">HTML academy</a>
+            <a class="nav__link a-global" href="https://htmlacademy.ru/" title="HTMLAcademy">HTML academy</a>
           </li>
         </ul>
 
@@ -126,15 +128,15 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">Поделиться фотографией PINK</h1>
+    <h1 class="visually-hidden h1-global">Поделиться фотографией PINK</h1>
     <section class="main-wrapper">
-      <h2 class="visually-hidden">Заголовок страницы</h2>
+      <h2 class="visually-hidden h2-global">Заголовок страницы</h2>
       <div class="main__background">
       </div>
 
       <div class="main__title-wrapper main__title-wrapper--form">
         <div class="container">
-          <h2 class="main__title">
+          <h2 class="main__title h2-global">
             Конкурс на самое безбашенное путешествие с Пинк
           </h2>
         </div>
@@ -143,14 +145,14 @@
 
     <div class="container section">
       <div class="section__description-wrapper section__description-wrapper--form">
-        <p class="section__description section__description--form">
+        <p class="section__description section__description--form p-global">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
       </div>
     </div>
 
     <form class="form" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset class="form__person">
+      <fieldset class="form__person fieldset-global">
         <div class="form__person-wrapper">
           <label class="form__label form__label--person" title="Фамилия">
             Фамилия:
@@ -174,7 +176,7 @@
 
       </fieldset>
 
-      <fieldset class="form__achievements form__section">
+      <fieldset class="form__achievements form__section fieldset-global">
         <legend class="form__label form__legend form__legend--achievements">Ваши безбашенные достижения в
           путешествии</legend>
         <div class="form__achievements-wrapper">
@@ -217,7 +219,7 @@
 
       </fieldset>
 
-      <fieldset class="form__contacts form__section container">
+      <fieldset class="form__contacts form__section container fieldset-global">
         <legend class="form__label form__legend form__legend--contacts">Контактная информация</legend>
 
         <div class="form__contacts-wrapper">
@@ -241,7 +243,7 @@
       </fieldset>
 
       <div class="form__app-used-wrapper">
-        <fieldset class="form__app-used form__section">
+        <fieldset class="form__app-used form__section fieldset-global">
           <legend class="form__label form__legend form__legend--app-used">С каким приложением
             путешествовали?</legend>
 
@@ -266,7 +268,7 @@
       </div>
 
 
-      <fieldset class="form__emotions form__section container">
+      <fieldset class="form__emotions form__section container fieldset-global">
         <legend class="form__label form__legend form__legend--emotions">
           Опишите свои эмоции
         </legend>
@@ -290,7 +292,7 @@
 
   <footer class="footer footer--form container">
 
-    <a class="footer__logo-wrapper" href="index.html" title="PINK">
+    <a class="footer__logo-wrapper a-global" href="index.html" title="PINK">
       <svg class="footer__logo" viewBox="0 0 146.3 40.375" width="147" height="40">
         <g class="footer__logo-img logo-img">
           <g class="logo-img__letter letter">
@@ -329,24 +331,24 @@
     </a>
 
     <div class="footer__social social">
-      <ul class="social__list">
+      <ul class="social__list ul-global">
         <li class="social__item">
-          <a class="social__link" href="https://twitter.com/htmlacademy" title="twitter">
-            <svg class="social__icon social__icon--twitter" x="0px" y="0px" width="17.5px" height="14.663px">
+          <a class="social__link a-global" href="https://twitter.com/htmlacademy" title="twitter">
+            <svg class="social__icon social__icon--twitter" x="0px" y="0px" width="17.5" height="14.663">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" title="Facebook">
-            <svg class="social__icon social__icon--facebook" x="0px" y="0px" width="8.673px" height="18.944px">
+          <a class="social__link a-global social__link--facebook" href="https://facebook.com/htmlacademy" title="Facebook">
+            <svg class="social__icon social__icon--facebook" x="0px" y="0px" width="8.673" height="18.944">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://youtube.com/htmlacademyru" title="YouTube">
-            <svg class="social__icon social__icon--youtube" x="0px" y="0px" width="14.64px" height="13.96px">
+          <a class="social__link a-global social__link--youtube" href="https://youtube.com/htmlacademyru" title="YouTube">
+            <svg class="social__icon social__icon--youtube" x="0px" y="0px" width="14.64" height="13.96">
               <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
@@ -356,7 +358,7 @@
 
     <div class="footer__copyright copyright social">
       <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTMLAcademy">
+      <a class="copyright__link a-global" href="https://htmlacademy.ru/intensive/adaptive" title="HTMLAcademy">
         <svg class="copyright__icon social__icon social__icon--academy" viewBox="0 0 60 60">
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>
@@ -366,8 +368,8 @@
   </footer>
 
   <div class="modal modal--error container section list">
-    <h3 class="modal__title list__title">Что-то пошло не так!</h3>
-    <p class="modal__description section__description">
+    <h3 class="modal__title list__title h3-global">Что-то пошло не так!</h3>
+    <p class="modal__description section__description p-global">
       Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
     </p>
     <div class="modal__button-free">
@@ -376,8 +378,8 @@
   </div>
 
   <div class="modal modal--sent container section list">
-    <h3 class="modal__title list__title">Ваша заявка отправлена</h3>
-    <p class="modal__description section__description">
+    <h3 class="modal__title list__title h3-global">Ваша заявка отправлена</h3>
+    <p class="modal__description section__description p-global">
       Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
       оповестим вас.
     </p>

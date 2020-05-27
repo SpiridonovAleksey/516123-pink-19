@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
 </head>
 
 <body>
@@ -129,31 +131,31 @@
 
         <div class="nav__toggle-wrapper">
           <button class="nav__toggle nav__toggle--none" type="button" title="Меню">
-            <svg class="nav__toggle-burger" x="0px" y="0px" width="49.945px" height="24.007px">
+            <svg class="nav__toggle-burger" x="0px" y="0px" width="49.945" height="24.007">
               <use xlink:href="#icon-menu-burger"></use>
             </svg>
-            <svg class="nav__toggle-cross" x="0px" y="0px" width="23.867px" height="23.867px">
+            <svg class="nav__toggle-cross" x="0px" y="0px" width="23.867" height="23.867">
               <use xlink:href="#icon-menu-cross"></use>
             </svg>
           </button>
         </div>
 
-        <ul class="nav__list">
+        <ul class="nav__list ul-global">
           <li class="nav__item">
-            <a class="nav__link" title="Главная">
-              <p class="nav__link-current">Главная</p>
+            <a class="nav__link a-global" title="Главная">
+              <p class="nav__link-current p-global">Главная</p>
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="photo.html" title="Фотографии">Фотографии</a>
+            <a class="nav__link a-global" href="photo.html" title="Фотографии">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html" title="Конкурс">
+            <a class="nav__link a-global" href="form.html" title="Конкурс">
               Конкурс
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="https://htmlacademy.ru/" title="HTMLAcademy">HTML academy</a>
+            <a class="nav__link a-global" href="https://htmlacademy.ru/" title="HTMLAcademy">HTML academy</a>
           </li>
         </ul>
       </nav>
@@ -162,17 +164,17 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">Приложение PINK</h1>
+    <h1 class="visually-hidden h1-global">Приложение PINK</h1>
 
     <section class="main-wrapper main-wrapper--index">
-      <h2 class="visually-hidden">Заголовок страницы</h2>
+      <h2 class="visually-hidden h2-global">Заголовок страницы</h2>
 
       <div class="main__background main__background--index">
       </div>
 
       <div class="main__title-wrapper main__title-wrapper--index">
         <div class="container">
-          <h2 class="main__title main__title--index">
+          <h2 class="main__title main__title--index h2-global">
             Взгляните на жизнь иначе!
           </h2>
         </div>
@@ -195,44 +197,44 @@
       </div>
 
       <article class="main__os os">
-        <h2 class="visually-hidden">Ссылки на приложения</h2>
+        <h2 class="visually-hidden h2-global">Ссылки на приложения</h2>
         <div class="os__wrapper">
-          <a class="os__button button button__oval button__oval--download"
+          <a class="os__button button button__oval button__oval--download a-global"
             href="https://play.google.com/store/apps?hl=ru" title="Скачать приложение">Скачать приложение</a>
-          <ul class="os__list">
+          <ul class="os__list ul-global">
             <li class="os__item">
-              <a class="os__link os__link--apple" href="https://play.google.com/store/apps?hl=ru"
+              <a class="os__link os__link--apple a-global" href="https://play.google.com/store/apps?hl=ru"
                 title="Приложение на iPhone">
-                <svg x="0px" y="0px" width="46.21px" height="56.753px">
+                <svg x="0px" y="0px" width="46.21" height="56.753">
                   <use xlink:href="#logo-apple"></use>
                 </svg>
               </a>
             </li>
             <li class="os__item">
-              <a class="os__link os__link--android" href="https://play.google.com/store/apps?hl=ru"
+              <a class="os__link os__link--android a-global" href="https://play.google.com/store/apps?hl=ru"
                 title="Приложение на Android">
-                <svg x="0px" y="0px" width="42.084px" height="47.041px">
+                <svg x="0px" y="0px" width="42.084" height="47.041">
                   <use xlink:href="#logo-android"></use>
                 </svg>
               </a>
             </li>
             <li class="os__item">
-              <a class="os__link os__link--windows" href="https://play.google.com/store/apps?hl=ru"
+              <a class="os__link os__link--windows a-global" href="https://play.google.com/store/apps?hl=ru"
                 title="Приложение на Windows Phone">
-                <svg x="0px" y="0px" width="43.922px" height="41.992px">
+                <svg x="0px" y="0px" width="43.922" height="41.992">
                   <use xlink:href="#logo-microsoft"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <p class="os__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="os__description p-global">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </article>
     </section>
 
     <section class="goals section">
 
-      <ul class="section__title-wrapper container">
+      <ul class="section__title-wrapper container ul-global">
         <li class="section__title section__item">
           Устали от серости мегаполиса?
         </li>
@@ -242,33 +244,33 @@
       </ul>
       <div class="goals__background">
         <div class="goals__container container">
-          <ul class="goals__list list">
+          <ul class="goals__list list ul-global">
             <li class="goals__item list__item">
-              <h3 class="goals__title list__title">
+              <h3 class="goals__title list__title h3-global">
                 Поднимает настроение
               </h3>
-              <p class="goals__description list__description">
+              <p class="goals__description list__description p-global">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </li>
             <li class="goals__item list__item">
-              <h3 class="goals__title list__title">
+              <h3 class="goals__title list__title h3-global">
                 Меняет мир вокруг
               </h3>
-              <p class="goals__description list__description">
+              <p class="goals__description list__description p-global">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
             </li>
             <li class="goals__item list__item">
-              <h3 class="goals__title list__title">
+              <h3 class="goals__title list__title h3-global">
                 Заводит новых друзей
               </h3>
-              <p class="goals__description list__description">
+              <p class="goals__description list__description p-global">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
             </li>
           </ul>
-          <ul class="goals__images">
+          <ul class="goals__images ul-global">
             <li class="goals__image">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
@@ -313,7 +315,7 @@
     <section class="effect">
       <div class="effect__container container">
         <div class="effect__timer">
-          <svg class="effect__icon-timer" x="0px" y="0px" width="298px" height="345.097px">
+          <svg class="effect__icon-timer" x="0px" y="0px" width="298" height="345.097">
             <use xlink:href="#icon-timer"></use>
           </svg>
           <div class="effect__timer-24">
@@ -321,14 +323,14 @@
           </div>
         </div>
         <div class="effect__item">
-          <h2 class="effect__title"><span class="effect__title-first">Эффект</span> на 24 часа!</h2>
-          <p class="effect__description">
+          <h2 class="effect__title h2-global"><span class="effect__title-first">Эффект</span> на 24 часа!</h2>
+          <p class="effect__description p-global">
             Британские ученые провели исследования
             и доказали, что положительный эффект
             от использования приложения длится
             целые сутки!
           </p>
-          <a class="effect__link" href="http://www.science.yoread.ru/news.php?readmore=1350" title="Исследования">Узнать
+          <a class="effect__link a-global" href="http://www.science.yoread.ru/news.php?readmore=1350" title="Исследования">Узнать
             больше об
             исследовании</a>
         </div>
@@ -348,27 +350,27 @@
         <button class="comments__prev js__prev" title="Предыдущий коммент"></button>
         <button class="comments__next js__next" title="Следующий коммент"></button>
         <div class="comments__list-wrapper">
-          <ul class="comments__list list">
+          <ul class="comments__list list ul-global">
             <li class="comments__item list__item js__slider-item js__visible">
-              <h3 class="comments__title list__title">Николай Петров</h3>
-              <h4 class="comments__subtitle">25 лет, водитель трамвая</h4>
-              <p class="comments__description list__description">«Это приложение перевернуло мой мир и позволило
+              <h3 class="comments__title list__title h3-global">Николай Петров</h3>
+              <h4 class="comments__subtitle h4-global">25 лет, водитель трамвая</h4>
+              <p class="comments__description list__description p-global">«Это приложение перевернуло мой мир и позволило
                 по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
                 комментариях
                 к выложенной фотографии!»
               </p>
             </li>
             <li class="comments__item list__item js__slider-item">
-              <h3 class="comments__title list__title">Анна Николаева</h3>
-              <h4 class="comments__subtitle">26 лет, многодетная кошка</h4>
-              <p class="comments__description list__description">«Прыгать или нет? Напишите в комментарии свой совет и
+              <h3 class="comments__title list__title h3-global">Анна Николаева</h3>
+              <h4 class="comments__subtitle h4-global">26 лет, многодетная кошка</h4>
+              <p class="comments__description list__description p-global">«Прыгать или нет? Напишите в комментарии свой совет и
                 смотрите прямую трансляцию в перископе, задавайте свои вопросы!»
               </p>
             </li>
             <li class="comments__item list__item js__slider-item">
-              <h3 class="comments__title list__title">Петр Котов</h3>
-              <h4 class="comments__subtitle">27 лет, слесарь 4 разряда</h4>
-              <p class="comments__description list__description">«Если есть на свете рай - это Краснодарский край»</p>
+              <h3 class="comments__title list__title h3-global">Петр Котов</h3>
+              <h4 class="comments__subtitle h4-global">27 лет, слесарь 4 разряда</h4>
+              <p class="comments__description list__description p-global">«Если есть на свете рай - это Краснодарский край»</p>
             </li>
           </ul>
         </div>
@@ -377,7 +379,7 @@
     </div>
 
     <section class="tariffs slider">
-      <h2 class="visually-hidden">Таблица тарифных планов</h2>
+      <h2 class="visually-hidden h2-global">Таблица тарифных планов</h2>
       <input type="radio" id="tariffs__btn-1" class="slider__radio-btn tariffs__btn-1" name="tariffs__toggle">
       <input type="radio" id="tariffs__btn-2" class="slider__radio-btn tariffs__btn-2" name="tariffs__toggle">
       <input type="radio" id="tariffs__btn-3" class="slider__radio-btn tariffs__btn-3" name="tariffs__toggle">
@@ -390,7 +392,7 @@
       </div>
 
       <div class="tariffs-wrapper">
-        <ul class="tariffs__list">
+        <ul class="tariffs__list ul-global">
           <li class="tariffs__item tariffs__filters">
             <div class="tariffs__filter tariffs__col">Розовый фильтр</div>
             <div class="tariffs__filter tariffs__col">Смайлики</div>
@@ -404,17 +406,17 @@
               </div>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698" height="21.09">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-no" x="0px" y="0px" width="26.752px" height="26.752px">
+              <svg class="tariffs__icon-no" x="0px" y="0px" width="26.752" height="26.752">
                 <use xlink:href="#icon-no"></use>
               </svg>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-no" x="0px" y="0px" width="26.752px" height="26.752px">
+              <svg class="tariffs__icon-no" x="0px" y="0px" width="26.752" height="26.752">
                 <use xlink:href="#icon-no"></use>
               </svg>
             </div>
@@ -428,17 +430,17 @@
               </div>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698" height="21.09">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698" height="21.09">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-no" x="0px" y="0px" width="26.752px" height="26.752px">
+              <svg class="tariffs__icon-no" x="0px" y="0px" width="26.752" height="26.752">
                 <use xlink:href="#icon-no"></use>
               </svg>
             </div>
@@ -452,17 +454,17 @@
               </div>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698" height="21.09">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698" height="21.09">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698" height="21.09">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
@@ -476,20 +478,20 @@
   <footer>
     <div class="contacts container section">
       <div class="contacts__title-wrapper section__title-wrapper">
-        <h2 class="section__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <h2 class="section__title h2-global">Остались вопросы? Свяжитесь с нами!</h2>
       </div>
-      <ul class="contacts__list list">
+      <ul class="contacts__list list ul-global">
         <li class="contacts__item list__item">
-          <h3 class="contacts__title list__title">Звоните:</h3>
-          <a class="contacts__type" href="tel:+78125550555" title="Телефон +7 812 5556666">+7 (812) 555-66-66</a>
+          <h3 class="contacts__title list__title h3-global">Звоните:</h3>
+          <a class="contacts__type a-global" href="tel:+78125550555" title="Телефон +7 812 5556666">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item list__item">
-          <h3 class="contacts__title list__title">Пишите:</h3>
-          <a class="contacts__type" href="mailto:mail@htmlacademy.ru"
+          <h3 class="contacts__title list__title h3-global">Пишите:</h3>
+          <a class="contacts__type a-global" href="mailto:mail@htmlacademy.ru"
             title="Почта mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item list__item">
-          <h3 class="contacts__title list__title">Приезжайте в гости:</h3>
+          <h3 class="contacts__title list__title h3-global">Приезжайте в гости:</h3>
           <span class="contacts__type" title="Адрес ул. Большая Конюшенная, 19/8">ул. Большая Конюшенная, 19/8</span>
         </li>
       </ul>
@@ -502,7 +504,7 @@
     </div>
 
     <div class="footer footer--index container">
-      <a class="footer__logo-wrapper" title="PINK">
+      <a class="footer__logo-wrapper a-global" title="PINK">
         <svg class="footer__logo" viewBox="0 0 146.3 40.375" width="147" height="40">
           <g class="footer__logo-img logo-img">
             <g class="logo-img__letter letter">
@@ -541,24 +543,24 @@
       </a>
 
       <div class="footer__social social">
-        <ul class="social__list">
+        <ul class="social__list ul-global">
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com/htmlacademy" title="twitter">
-              <svg class="social__icon social__icon--twitter" x="0px" y="0px" width="17.5px" height="14.663px">
+            <a class="social__link a-global" href="https://twitter.com/htmlacademy" title="twitter">
+              <svg class="social__icon social__icon--twitter" x="0px" y="0px" width="17.5" height="14.663">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" title="Facebook">
-              <svg class="social__icon social__icon--facebook" x="0px" y="0px" width="8.673px" height="18.944px">
+            <a class="social__link social__link--facebook a-global" href="https://facebook.com/htmlacademy" title="Facebook">
+              <svg class="social__icon social__icon--facebook" x="0px" y="0px" width="8.673" height="18.944">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://youtube.com/htmlacademyru" title="YouTube">
-              <svg class="social__icon social__icon--youtube" x="0px" y="0px" width="14.64px" height="13.96px">
+            <a class="social__link social__link--youtube a-global" href="https://youtube.com/htmlacademyru" title="YouTube">
+              <svg class="social__icon social__icon--youtube" x="0px" y="0px" width="14.64" height="13.96">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
@@ -568,7 +570,7 @@
 
       <div class="footer__copyright copyright social">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTMLAcademy">
+        <a class="copyright__link a-global" href="https://htmlacademy.ru/intensive/adaptive" title="HTMLAcademy">
           <svg class="copyright__icon social__icon social__icon--academy" viewBox="0 0 60 60">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
